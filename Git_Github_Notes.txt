@@ -1,0 +1,79 @@
+Git is a version control software
+Git hub is Git Repository hosting Platform 
+
+Many times most of the people assume both Git and GitHub are same , its not same. 
+
+why we need VCS?
+1. Files Stored with suffixes: _v1,_Date,_final.. etc
+2. Difficult to revert to the previous stable versions , Difficult to track who made changes, when the changes were made, what changes were made to the code. 
+3. Difficult for peers to colaborate
+4. Disater recovery
+5. Discovery of files
+Ex:
+https://dev.azure.com/CorporateBanking/FLIQ/_git/esg_lending?version=GBmaster
+ESG - DB script
+
+Advantages of version control system :
+
+Track Changes
+Can revert to any version 
+Find the what, when and who of changesmade
+Easy recovery in case of any disaster
+Improves the efficiency 
+
+ 
+All the Veriosns of the file were saved in the database , database is same local computer --what if the local computer crashed?
+what is mutliple deve's want to collaborate?
+
+-- Centralised version control system 
+All versions were saved in central repository 
+checkout -- and can be collaborated 
+CVS, SVN are the examples
+what if the central server crashes  -- chances are less, still ther is possibilituy 
+
+--- 
+Distributed version control system --
+All the file changes are copied in your local server -- entire repository 
+Entire version history is shared to the developers. 
+everytime, we need not go to central ssystem that adds, Network call and latency 
+Tools: Git, Perforce, BitKeeper, Git is the most popular  --open source 
+---,
+Github(owned by microsoft) , BitBucket, GitLab, Sourceforges
+
+-- 
+whenvere we are working on the project , we have to craete a branch and then start working on that branch 
+
+----
+
+Basic Git commands:
+git init
+Git config user.name <username>
+git config user.email <email>
+git status
+git add <file> -- once we add file, it goes to the staging env
+git commit -m "first commit"
+
+git branch -M main
+git push -u origin main
+git push -u origin master
+
+
+git add sum.py
+git log
+git revert HEAD
+git reset --hard <commitid> 
+
+git checkout -b newbranch
+git push -u origin newbranch
+pull request and merge
+
+
+
+
+
+
+
+
+
+
+
